@@ -42,7 +42,7 @@ Actually I will solve the problems with:
 Those are the languages that I know at the moment. I don't know if I will add some other languages, it's not so easy.
 
 ## Can I contribute to this? ##
-**OF COURSE YOU CAN, YOU HAVE TO :smile: **
+**OF COURSE YOU CAN** YOU HAVE TO :smile:
 
 - If you want to pull a solution with different language, I will not cover EVERY problems with all languages, fell free to submit a pull request.
 - If you think that you have a faster, or better, solution, feel free to open an issue and we will discuss on it :-)
