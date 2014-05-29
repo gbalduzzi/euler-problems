@@ -1,5 +1,5 @@
 Project Euler - Problems
-==============
+===
 
 Repository that contains every problems that I took on [Project Euler](http://projecteuler.net/problems), it's awesome you should check it out.
 
