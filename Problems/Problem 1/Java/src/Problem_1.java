@@ -1,8 +1,3 @@
-/**
- * package name is by convention.
- */
-package com.euler.problems;
-
 import java.util.ArrayList;
 import java.util.List;
 

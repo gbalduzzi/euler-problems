@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /***********************
  *
  * Problem 1 From Project Euler
@@ -23,12 +22,12 @@
 
 int array_sum(int array[]);
 
-int main(int argc, char** argv)
+int main(int argc, char* argv[])
 {
     // I don't think this is the best way to work but...
     int size = 1000;
     int multiple[sizeof(size)] = {0};
-
+    int total = 0;
     // First of all we need to iterate trough 1000 numbers
     for( int i = 0; i < size; i++)
     {
@@ -38,7 +37,7 @@ int main(int argc, char** argv)
 
     // Since C does not have a builtin function I wrote something similar :)
     // And now the final part
-    int total = array_sum(multiple);
+    total = array_sum(multiple);
     return 0;
 }
 
@@ -54,7 +53,7 @@ int array_sum(int array[])
     int i, sum = 0;
     for( i = 0; i < 1000; i++)
     {
-        sum = sum + array[i];
+        sum += array[i];
     }
     return sum;
 }

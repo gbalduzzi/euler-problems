@@ -15,6 +15,7 @@
  * This is not the final version, as you can see I'll trace the version of every solution, so please don't think that
  * this is the best algorithm in terms of speed and code optimization, for any trouble open an issue.
  *
+ * @author Pietro Arturo Panetta (arturu.it)
  * @author Claudio Ludovico Panetta (@Ludo237)
  * @version 1.5.0
  *************************************/
@@ -25,7 +26,7 @@ $startTest = microtime();
 // We need a scalable algorithm so we cannot use a static zise for our test
 $size = 1000;
 // Create one array to store multiples of three and five
-$multiple = []; // Array
+$multiple = array(); // Array
 
 // First of all we need to iterate trough 1000 numbers
 for($i = 0; $i < $size; $i++){

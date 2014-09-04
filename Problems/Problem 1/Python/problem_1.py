@@ -4,30 +4,25 @@ Problem 1 from Project Euler
 If we list all the natural numbers below 10 that are multiples of 3 and 5, we get 3, 5, 6 and 9. The sum of these multipes is 23.
 Find the sum of all the multiples of 3 or 5 below 1000.
 
-This file is made with VIM using Python 2.7.6 on Linux.
+This file is made with VIM using Python 3 on Mac osX.
 
-PLEASE NOTE
-In order to work you should have at least Python 2.5.x+ (Python 2.7.x+ is better)
-
-REGARDING THE PERFORMANCE
-This is not the final version of this algorithm, I'll trace the version of every solution. For any suggest of improvments please
-open an issue or a pull request.
-
-@author Claudio Ludovico Panetta (@Ludo237)
-@version 1.5.0
+@author Andrea Benfatti (@Benfa94)
 '''
-# We need a scalable algorithm so we cannot use a static size for our test
-size = 1000
 
-# To store the multiple we need an array (or list)
-multiple = []
+size = 999
+# numberOfMultiple*(lastMultiple + firstMultiple)/2
 
-# First of all we need to iterate trough size numbers
-for i in range(0,size):
-    if(i % 3 == 0) or (i % 5 == 0): # if 'i' number mod 3 equal 0...
-        multiple.append(i) # ...it's a mutiples, we can append here
+nMultiplesOf3 = size//3
+nMultiplesOf5 = size//5
+nMultiplesOf15 = size//15
 
-# By using sum(array) we can sum the two list
-# very handy function from Python 2.3+
-# And then we have the total
-total = sum(multiple)
+maxMultipleOf3 = nMultiplesOf3 * 3
+maxMultipleOf5 = nMultiplesOf5 * 5
+maxMultipleOf15 = nMultiplesOf15 * 15
+
+sumMultiples3 = nMultiplesOf3*(maxMultipleOf3+3)/2
+sumMultiples5 = nMultiplesOf5*(maxMultipleOf5+5)/2
+sumMultiples15 = nMultiplesOf15*(maxMultipleOf15+15)/2
+total = sumMultiples3 + sumMultiples5 - sumMultiples15
+
+
